@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista Operações Matemáticas</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Exercicio 1: -->
+  <div class="container">
+    <h2>Operações Matemáticas</h2>
+    <div class="row input-container">
+      <div class="col">
+        <label for="num1">Número 1:</label>
+        <input type="text" id="num1" value="10" readonly>
+      </div>
+      <div class="col">
+        <label for="num2">Número 2:</label>
+        <input type="text" id="num2" value="100" readonly>
+      </div>
+    </div>
+    <div class="row input-container">
+      <div class="col">
+        <label for="soma">Soma:</label>
+        <input type="text" id="soma" readonly>
+      </div>
+    </div>
+    <div class="row input-container">
+      <div class="col">
+        <label for="subt">Subtração:</label>
+        <input type="text" id="subt" readonly>
+      </div>
+    </div>
+    <div class="row input-container">
+      <div class="col">
+        <label for="divi">Divisão:</label>
+        <input type="text" id="divi" readonly>
+      </div>
+    </div>
+    <div class="row input-container">
+      <div class="col">
+        <label for="multi">Multiplicação:</label>
+        <input type="text" id="multi" readonly>
+      </div>
+    </div>
+
+    <button onclick="Calcular()">Calcular</button>
+  </div>
+
+  <!-- Exercicio 2 -->
+  <div class="container">
+    <h2>Loop de 10 a 100</h2>
+    <div class="row input-container">
+      <div class="col-md-12">
+        <input type="text" id="loop" readonly>
+      </div>
+    </div>
+
+    <button onclick="Loop()">Loop</button>
+  </div>
+
+  <!-- Exercicio 3 -->
+  <div class="container">
+    <h2>Tabuada do Número 5</h2>
+    <div class="row input-container">
+      <div class="col-md-12">
+        <div id="tabuada"></div>
+      </div>
+    </div>
+
+    <button onclick="Tabuada()">Calcular</button>
+  </div>
+
+  <!-- Exercicio 4 -->
+  <div class="container">
+    <h2>Tabuada</h2>
+    <div class="row input-container">
+      <div class="col-md-12">
+        <label for="valor">Digite o valor para a tabuada:</label>
+        <input type="text" id="numT">
+        <div id="tabuadaUm"></div>
+      </div>
+    </div>
+
+    <button onclick="TabuadaUm()">Calcular</button>
+  </div>
+
+  <!-- Exercicio 5 -->
+  <div class="container">
+    <h2>Calculadora</h2>
+    <div class="row input-container">
+      <div class="col-md-12">
+        <label for="">Digite seu primeiro Número: </label>
+        <input type="text" id="numC1">
+
+        <label for="">Digite seu segundo Número: </label>
+        <input type="text" id="numC2"> <br>
+
+        <label for="">Escolha uma operação</label>
+        <input  list="op" id="operacoes" type="text">
+        <datalist id="op">
+          <option value="+"></option>
+          <option value="-"></option>
+          <option value="*"></option>
+          <option value="/"></option>
+        </datalist>
+        <br>
+        <label for=""> Resultado</label>
+        <input type="text" id="resultado" readonly>
+        <br>
+
+        <button onclick="Calculadora()">Calcular</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Exercicio 6 -->
+  <div class="container">
+    <h2>Percorrendo um Array</h2>
+    <div class="row input-container">
+      <div class="col-md-12">
+        <label for="">Array</label>
+        <input type="text" id="array" readonly> <br>
+
+        <label for="">Valores Pares</label>
+        <input type="text" id="pares" readonly> <br>
+
+        <button onclick="NumPar()">Exibir</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Exercicio 7 -->
+
+    <div class="container">
+      <h2>Custo de um Carro Novo</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <label for="">Custo de Fábrica</label>
+          <input type="text" id="custoFabrica"> <br>
+
+          <label for="">Percentual do Distribuidor</label>
+          <input type="text" id="percDistribuidor"> <br>
+
+          <label for="">Percentual dos Impostos</label>
+          <input type="text" id="percImpostos"> <br>
+
+          <label for="">Valor Final do Carro</label>
+          <input type="text" id="valorFinal" readonly> <br>
+
+          <button onclick="CustoCarro()">Calcular</button>
+
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
